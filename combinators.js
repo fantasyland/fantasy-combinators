@@ -49,7 +49,7 @@ function identity(a) {
 function substitution(f) {
     return function(g) {
         return function(x) {
-            f(x)(g(x));
+            return f(x)(g(x));
         };
     };
 }
