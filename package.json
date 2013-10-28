@@ -1,0 +1,19 @@
+{
+  "name": "fantasy-combinators",
+  "version": "0.0.0",
+  "description": "Common combinators.",
+  "main": "combinators.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/puffnfresh/fantasy-combinators.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fantasyland",
+    "combinators"
+  ],
+  "author": "Brian McKenna",
+  "license": "BSD-2-Clause"
+}
