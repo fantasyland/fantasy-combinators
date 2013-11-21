@@ -1,19 +1,33 @@
 {
   "name": "fantasy-combinators",
-  "version": "0.0.1",
   "description": "Common combinators.",
-  "main": "combinators.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/puffnfresh/fantasy-combinators.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "url": "git://github.com/fantasyland/fantasy-combinators.git"
   },
   "keywords": [
     "fantasyland",
     "combinators"
   ],
   "author": "Brian McKenna",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/fantasyland/fantasy-combinators/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt-cli": "0.1.9",
+    "grunt": "0.4.x",
+    "grunt-contrib-jshint": "0.6.x",
+    "grunt-contrib-nodeunit": "0.2.0",
+    "fantasy-check": "0.0.8",
+    "fantasy-helpers": "0.0.x"
+  },
+  "scripts": {
+      "test": "grunt"
+  },
+  "files": ["fantasy-combinators.js", "src/*.js"],
+  "main": "fantasy-combinators.js",
+  "version": "0.0.2"
 }
