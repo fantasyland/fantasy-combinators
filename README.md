@@ -15,6 +15,7 @@ Combinators which are used for [fantasy-land](https://github.com/fantasyland) pr
     6. Identity - I combinator
     7. Substitution - S combinator
     8. Thrush - T combinator
+    9. Psi - P combinator
 
 ## Testing
 
