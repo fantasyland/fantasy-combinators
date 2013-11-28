@@ -5,7 +5,8 @@ var apply = require('./src/apply'),
     flip = require('./src/flip'),
     identity = require('./src/identity'),
     substitution = require('./src/substitution'),
-    thrush = require('./src/thrush');
+    thrush = require('./src/thrush'),
+    psi = require('./src/psi');
 
 if(typeof module != 'undefined')
     module.exports = {
@@ -16,5 +17,6 @@ if(typeof module != 'undefined')
         flip: flip,
         identity: identity,
         substitution: substitution,
-        thrush: thrush
+        thrush: thrush,
+        psi: psi
     };
