@@ -6,9 +6,9 @@ var λ = require('fantasy-check/src/adapters/nodeunit'),
 
 exports.constant = {
     'when testing constant should return correct value': λ.check(
-        function(a) {
-            return constant(a)() === a;
+        function(a, b) {
+            return constant(a)(b) === a;
         },
-        [λ.AnyVal]
+        [λ.AnyVal, λ.AnyVal]
     )
 };

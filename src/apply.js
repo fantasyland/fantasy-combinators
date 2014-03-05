@@ -1,9 +1,9 @@
-// A combinator
-function apply(f) {
-    return function(x) {
+var helpers = require("fantasy-helpers"),
+    
+    // A combinator
+    apply = helpers.curry(function(f, x) {
         return f(x);
-    };
-}
+    });
 
 // Export
 if(typeof module != 'undefined')

@@ -1,9 +1,9 @@
-// K combinator
-function constant(a) {
-    return function(b) {
+var helpers = require("fantasy-helpers"),
+    
+    // K combinator
+    constant = helpers.curry(function(a, b) {
         return a;
-    };
-}
+    });
 
 // Export
 if(typeof module != 'undefined')
