@@ -1,9 +1,5 @@
 // T combinator
-function thrush(x) {
-    return function(f) {
-        return f(x);
-    };
-}
+const thrush = (x) => (f) => f(x);
 
 // Export
 if(typeof module != 'undefined')

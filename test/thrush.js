@@ -1,14 +1,9 @@
-var λ = require('fantasy-check/src/adapters/nodeunit'),
-    combinators = require('../fantasy-combinators'),
-
-    thrush = combinators.thrush,
-    identity = combinators.identity;
+const λ = require('fantasy-check/src/adapters/nodeunit');
+const {thrush, identity} = require('../fantasy-combinators');
 
 exports.thrush = {
     'when testing thrush should return correct value': λ.check(
-        function(a) {
-            return thrush(a)(identity) === a;
-        },
+        (a) => thrush(a)(identity) === a,
         [λ.AnyVal]
     )
 };

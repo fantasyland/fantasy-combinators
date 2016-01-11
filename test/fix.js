@@ -1,12 +1,9 @@
-var λ = require('fantasy-check/src/adapters/nodeunit'),
-    combinators = require('../fantasy-combinators'),
-
-    fix = combinators.fix,
-    identity = combinators.identity;
+const λ = require('fantasy-check/src/adapters/nodeunit');
+const {fix, identity} = require('../fantasy-combinators');
 
 exports.fix = {
     'when testing fix should return correct value': function(test) {
-        var result = fix(function(f) {
+        const result = fix((f) => {
                 return function f(n) {
                     return n === 0 ? 1 : n * f(n - 1);
                 };

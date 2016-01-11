@@ -1,9 +1,5 @@
 // A combinator
-function apply(f) {
-    return function(x) {
-        return f(x);
-    };
-}
+const apply = (f) => (x) => f(x);
 
 // Export
 if(typeof module != 'undefined')

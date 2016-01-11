@@ -1,11 +1,5 @@
 // C combinator
-function flip(f) {
-    return function(a) {
-        return function(b) {
-            return f(b)(a);
-        };
-    };
-}
+const flip = (f) => (a) => (b) => f(b)(a);
 
 // Export
 if(typeof module != 'undefined')

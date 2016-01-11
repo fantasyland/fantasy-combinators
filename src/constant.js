@@ -1,9 +1,5 @@
 // K combinator
-function constant(a) {
-    return function(b) {
-        return a;
-    };
-}
+const constant = (a) => (b) => a;
 
 // Export
 if(typeof module != 'undefined')

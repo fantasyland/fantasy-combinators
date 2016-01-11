@@ -1,14 +1,9 @@
-var λ = require('fantasy-check/src/adapters/nodeunit'),
-    combinators = require('../fantasy-combinators'),
-
-    apply = combinators.apply,
-    identity = combinators.identity;
+const λ = require('fantasy-check/src/adapters/nodeunit');
+const {apply, identity} = require('../fantasy-combinators');
 
 exports.apply = {
     'when testing apply should return correct value': λ.check(
-        function(a) {
-            return apply(identity)(a) === a;
-        },
+        (a) => apply(identity)(a) === a,
         [λ.AnyVal]
     )
 };

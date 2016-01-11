@@ -1,7 +1,5 @@
 // I combinator
-function identity(a) {
-    return a;
-}
+const identity = (a) => a;
 
 // Export
 if(typeof module != 'undefined')

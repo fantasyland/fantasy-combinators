@@ -1,22 +1,12 @@
-var apply = require('./src/apply'),
-    compose = require('./src/compose'),
-    constant = require('./src/constant'),
-    fix = require('./src/fix'),
-    flip = require('./src/flip'),
-    identity = require('./src/identity'),
-    substitution = require('./src/substitution'),
-    thrush = require('./src/thrush'),
-    psi = require('./src/psi');
+const apply = require('./src/apply');
+const compose = require('./src/compose');
+const constant = require('./src/constant');
+const fix = require('./src/fix');
+const flip = require('./src/flip');
+const identity = require('./src/identity');
+const substitution = require('./src/substitution');
+const thrush = require('./src/thrush');
+const psi = require('./src/psi');
 
 if(typeof module != 'undefined')
-    module.exports = {
-        apply: apply,
-        compose: compose,
-        constant: constant,
-        fix: fix,
-        flip: flip,
-        identity: identity,
-        substitution: substitution,
-        thrush: thrush,
-        psi: psi
-    };
+    module.exports = { apply, compose, constant, fix, flip, identity, substitution, thrush, psi };

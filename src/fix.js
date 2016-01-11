@@ -1,10 +1,6 @@
 // Y combinator
-function fix(f) {
-    function g(h) {
-        return function(x) {
-            return f(h(h))(x);
-        };
-    }
+const fix = (f) => {
+    const g = (h) => (x) => f(h(h))(x);
     return g(g);
 }
 

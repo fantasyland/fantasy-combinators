@@ -17,15 +17,12 @@
   "dependencies": {
   },
   "devDependencies": {
-    "grunt-cli": "0.1.9",
-    "grunt": "0.4.x",
-    "grunt-contrib-jshint": "0.6.x",
-    "grunt-contrib-nodeunit": "0.2.0",
+    "nodeunit": "0.9.x",
     "fantasy-check": "0.0.8",
     "fantasy-helpers": "0.0.x"
   },
   "scripts": {
-      "test": "grunt"
+      "test": "node --harmony_destructuring node_modules/.bin/nodeunit test/*.js"
   },
   "files": ["fantasy-combinators.js", "src/*.js"],
   "main": "fantasy-combinators.js",
